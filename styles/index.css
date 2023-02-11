@@ -115,7 +115,6 @@ header .content,
     display: flex;
     justify-content: space-between;
     border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .right {
@@ -129,6 +128,7 @@ header .content,
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    animation: showRightToLeft .5s ease-in;
 }
 
 .right .center-align {
@@ -150,7 +150,6 @@ header .content,
     margin-bottom: 8px;
     display: block;
     text-align: right;
-    /*animation: showRightToLeft 1.5s ease-in;*/
 }
 
 .small-text {
