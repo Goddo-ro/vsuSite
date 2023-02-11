@@ -25,6 +25,8 @@ a {
     color: var(--white-color);
 }
 
+/*Header styles*/
+
 header {
     display: flex;
     align-items: center;
@@ -38,6 +40,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+section p {
+    margin: 16px 0;
 }
 
 .content {
@@ -85,9 +91,8 @@ header .content,
     margin-right: 12px;
 }
 
-.icon {
-    width: 40px;
-    border-radius: 50%;
+.cart {
+    width: 30px;
 }
 
 .user {
@@ -97,8 +102,10 @@ header .content,
 
 .username {
     font-size: 1.5rem;
-    margin-inline: 8px;
+    margin-inline: 16px;
 }
+
+/*Greetings styles*/
 
 .greetings {
     height: calc(100vh - 70px);
@@ -182,8 +189,12 @@ header .content,
     border: 2px solid var(--brown-color);
 }
 
-.about-me {
+.about-me,
+.project {
     font-size: 1.25rem;
+}
+
+.about-me {
     background: var(--black-color);
     color: var(--white-color);
 }
@@ -195,7 +206,6 @@ header .content,
 .about-me p {
     font-weight: 200;
     font-size: 1.2em;
-    margin: 16px 0;
 }
 
 .about-me span {
@@ -205,6 +215,46 @@ header .content,
 .even {
     border-left: 1px solid var(--white-color);
     padding-inline: 12px;
+}
+
+/*Project styles*/
+
+.project {
+    margin-bottom: 0;
+    font-size: 1.5em;
+    color: var(--black-color);
+}
+
+.project h2 {
+    border-bottom: 1px solid var(--black-color);
+}
+
+.project p {
+    margin-bottom: 3rem;
+}
+
+.project h4 {
+    margin-bottom: 4px;
+}
+
+.content > .wrapper {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--black-color);
+    border-radius: 8px;
+    padding-bottom: 2rem;
+}
+
+ul {
+    margin-left: 2rem;
+}
+
+ul > li {
+    margin-bottom: 12px;
+}
+
+ol {
+    margin-left: 2.5rem;
 }
 
 @keyframes showRightToLeft {
