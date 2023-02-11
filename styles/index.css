@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Yanone+Kaffeesatz:wght@200;400&display=swap');
 
 :root {
     --black-color: #2C3639;
@@ -22,6 +22,7 @@ body {
 
 a {
     cursor: pointer;
+    color: var(--white-color);
 }
 
 header {
@@ -179,6 +180,31 @@ header .content,
     background: var(--white-color);
     color: var(--black-color);
     border: 2px solid var(--brown-color);
+}
+
+.about-me {
+    font-size: 1.25rem;
+    background: var(--black-color);
+    color: var(--white-color);
+}
+
+.about-me h2 {
+    border-bottom: 1px solid var(--white-color);
+}
+
+.about-me p {
+    font-weight: 200;
+    font-size: 1.2em;
+    margin: 16px 0;
+}
+
+.about-me span {
+    font-weight: 400;
+}
+
+.even {
+    border-left: 1px solid var(--white-color);
+    padding-inline: 12px;
 }
 
 @keyframes showRightToLeft {
