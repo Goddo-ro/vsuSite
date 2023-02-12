@@ -40,6 +40,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: calc(100vh - 70px);
 }
 
 section p {
@@ -52,12 +53,20 @@ section p {
     margin-inline: auto;
 }
 
+.content:not(footer .content):not(header .content) {
+    margin-top: -70px;
+}
+
 header .content,
 .left,
 .left div {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+header .content {
+    max-width: 1400px;
 }
 
 .left h1 {
@@ -68,6 +77,10 @@ header .content,
 .logo {
     width: 40px;
     margin-right: 6px;
+}
+
+.links {
+    margin-left: -3rem;
 }
 
 .links a {
@@ -106,14 +119,9 @@ header .content,
 
 /*Greetings styles*/
 
-.greetings {
-    height: calc(100vh - 70px);
-}
-
 .greetings .content {
     display: flex;
     justify-content: space-between;
-    border-radius: 50%;
 }
 
 .right {
@@ -145,7 +153,7 @@ header .content,
 }
 
 .right .small-text {
-    margin-top: -12px;
+    margin-top: -8px;
     margin-bottom: 8px;
     display: block;
     text-align: right;
