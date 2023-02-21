@@ -135,7 +135,6 @@ header .content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    animation: showRightToLeft .5s ease-in;
 }
 
 .right .center-align {
@@ -305,13 +304,4 @@ footer {
 
 .social a img {
     width: 30px;
-}
-
-@keyframes showRightToLeft {
-    from {
-        transform: translateX(1000px);
-    }
-    to {
-        transform: translateX(0);
-    }
 }
