@@ -293,8 +293,15 @@ footer {
     border-radius: 12px;
 }
 
-.social {
+footer .content {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social {
+    height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -304,4 +311,29 @@ footer {
 
 .social a img {
     width: 30px;
+}
+
+.remove-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.remove-image {
+    width: 40%;
+}
+
+.remove-text {
+    z-index: -1;
+    position: absolute;
+    right: -144%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #DCD7C9;
+    padding: 2px 8px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    display: none;
 }

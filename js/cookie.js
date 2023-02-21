@@ -29,7 +29,7 @@ export function setCookie(name, value, options = {}) {
   document.cookie = updatedCookie;
 }
 
-function deleteCookie(name) {
+export function deleteCookie(name) {
   setCookie(name, "", {
     'max-age': -1
   })
